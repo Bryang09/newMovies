@@ -1,0 +1,20 @@
+.Hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+    url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=58ecb1b1731968ec6f31354702067651&auto=format&fit=crop&w=1350&q=80)
+      no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 4em;
+    text-align: center;
+
+    span {
+      font-weight: 400;
+    }
+  }
+}

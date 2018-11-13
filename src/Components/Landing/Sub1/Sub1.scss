@@ -1,0 +1,43 @@
+$Link: #3bda3b;
+
+.Sub1 {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  padding: 3vh 0;
+
+  .subText {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    h1 {
+      font-weight: 400;
+      width: 90%;
+      margin-bottom: 4vh;
+    }
+
+    h5 {
+      border: 1px solid $Link;
+      padding: 2vh 3vw;
+      border-radius: 35px;
+      background: $Link;
+      color: #fff;
+      margin: 0;
+
+      &:hover {
+        background: darken($Link, 10%);
+        transition-duration: 0.5s;
+      }
+    }
+  }
+
+  .subImg {
+    width: 55%;
+    background: url(http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/54/k8/p054k8mk.jpg)
+      no-repeat center center / cover;
+  }
+}

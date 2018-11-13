@@ -1,0 +1,66 @@
+.Nav {
+  position: fixed;
+  top: 0;
+  background: #0c2856fc;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  z-index: 9;
+
+  .navTitle {
+    // width: 40%;
+    margin-left: 10vw;
+
+    a {
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .Navigation {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35vw;
+
+    a {
+      color: #fff;
+      margin: 0 1.5vw;
+    }
+
+    h3 {
+      font-weight: 300;
+      cursor: pointer;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .Nav {
+    .Navigation {
+      margin-left: 25vw;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .Nav {
+    .Navigation {
+      margin-left: 15vw;
+
+      h3 {
+        font-size: 0.95em;
+      }
+    }
+    .navTitle {
+      h2 {
+        font-size: 1.2em;
+      }
+    }
+  }
+}

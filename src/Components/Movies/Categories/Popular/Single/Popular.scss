@@ -1,0 +1,123 @@
+$Link: #3bda3b;
+
+.Movies .Category {
+  height: 100%;
+  background: linear-gradient(
+    rgba(234, 130, 0, 0.7),
+    rgba(234, 130, 0, 0.7),
+    rgba(5, 105, 191, 0.95)
+  );
+
+  .Movie {
+    height: 60vh;
+    width: 95%;
+    display: flex;
+    margin: 3vh auto;
+    transition: 1s ease-in;
+    background: #fff;
+
+    .img {
+      height: 100%;
+      width: 30%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      margin-right: 10%;
+      transition: 1s ease-in;
+      cursor: pointer;
+    }
+
+    .initialImg {
+      height: 100%;
+      width: 20%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      margin: 0 auto;
+      transition: 1s ease-in;
+      cursor: pointer;
+    }
+
+    .desc {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: 1s ease-in;
+
+      h2 {
+        font-weight: 400;
+        margin-bottom: 0.5vh;
+      }
+
+      h3 {
+        font-weight: 300;
+        span {
+          font-weight: 400;
+          text-align: center;
+          width: 100%;
+
+          img {
+            height: 16px;
+            margin-right: 0.35vw;
+          }
+        }
+      }
+      h5 {
+        border: 1px solid $Link;
+        padding: 2vh 3vw;
+        border-radius: 35px;
+        background: $Link;
+        color: #fff;
+        margin: 0;
+
+        &:hover {
+          background: darken($Link, 10%);
+          cursor: pointer;
+        }
+      }
+    }
+    .initialDesc {
+      display: none;
+      transition: 1s ease-in;
+    }
+  }
+}
+
+.Movies .initialCategory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .Movie {
+    height: 60vh;
+    width: 20%;
+    display: flex;
+    margin: 3vh 1vw;
+    // transition: 1s ease-in;
+    background: #fff;
+
+    .initialImg {
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      margin: 0 auto;
+      transition: 1s ease-in;
+      cursor: pointer;
+    }
+
+    .initialDesc {
+      display: none;
+      transition: 1s ease-in;
+    }
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .Movies .Categories .Movie .initialImg {
+    width: 40%;
+  }
+}

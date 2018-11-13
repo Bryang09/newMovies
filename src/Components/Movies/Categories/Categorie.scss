@@ -1,0 +1,28 @@
+.MovieCategorie {
+  height: 100%;
+  background: linear-gradient(#ea8200, #ea8200, rgb(0, 85, 255));
+
+  .Categories {
+    padding-top: 15vh;
+    padding-left: 5vw;
+
+    h1 {
+      font-weight: 300;
+      color: #fff;
+    }
+  }
+}
+
+.Movies {
+  height: 100%;
+}
+
+@media screen and (max-width: 1170px) {
+  .Categories {
+    height: 100%;
+  }
+
+  .Movies .Categories .Movie .initialImg {
+    width: 40%;
+  }
+}
