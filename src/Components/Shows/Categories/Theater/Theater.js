@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import Nav from "../../../Nav/Nav";
-import PopularMovie from "./Single/Popular";
+import TheaterMovie from "./Single/Theater";
 
 import axios from "axios";
 
@@ -9,16 +9,16 @@ import "../Categorie.scss";
 
 const API_KEY = "736cb0f2a5061149d7b43012b1dada7e";
 
-class Popular extends Component {
+class Theater extends Component {
   state = {
-    popular: null
+    theater: null
   };
   componentDidMount = () => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US`
+        `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=en-US&page=1`
       )
-      .then(res => this.setState({ popular: res.data }))
+      .then(res => this.setState({ theater: res.data }))
       .catch(err => console.log(err));
   };
 
@@ -26,13 +26,13 @@ class Popular extends Component {
     return (
       <div className="MovieCategorie">
         <Nav />
-        <div className="Categories_">
-          <h1>Popular Movies</h1>
+        <div className="Categories">
+          <h1> Movies In Theater</h1>
         </div>
         <div className="Movies">
-          {this.state.popular !== null ? (
-            <PopularMovie
-              popular={this.state.popular}
+          {this.state.theater !== null ? (
+            <TheaterMovie
+              theater={this.state.theater}
               change={this.onNotInitial}
             />
           ) : null}
@@ -42,4 +42,4 @@ class Popular extends Component {
   }
 }
 
-export default Popular;
+export default Theater;

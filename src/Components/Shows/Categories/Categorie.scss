@@ -1,8 +1,8 @@
-.MovieCategorie {
+.ShowCategorie {
   height: 100%;
-  background: linear-gradient(#ea8200, #ea8200, rgb(0, 85, 255));
+  background: linear-gradient(rgb(0, 85, 255), rgb(0, 85, 255), #ea8200);
 
-  .Categories_ {
+  .ShowCategories {
     padding-top: 15vh;
     padding-left: 5vw;
 
@@ -13,7 +13,7 @@
   }
 }
 
-.Movies {
+.Shows {
   height: 100%;
 }
 
@@ -22,7 +22,7 @@
     height: 100%;
   }
 
-  .Movies .Categories_ .Movie .initialImg {
+  .Shows .InitialShowCategory .Show .initialImg {
     width: 40%;
   }
 }

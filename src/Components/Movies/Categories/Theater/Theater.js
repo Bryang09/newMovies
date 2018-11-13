@@ -26,7 +26,7 @@ class Theater extends Component {
     return (
       <div className="MovieCategorie">
         <Nav />
-        <div className="Categories">
+        <div className="Categories_">
           <h1> Movies In Theater</h1>
         </div>
         <div className="Movies">

@@ -2,11 +2,13 @@ import React from "react";
 
 import Nav from "../Nav/Nav";
 
+import Landing from "./Landing/Landing";
+
 const Shows = () => {
   return (
     <div className="Shows">
       <Nav />
-      <h1>Shows</h1>
+      <Landing />
     </div>
   );
 };

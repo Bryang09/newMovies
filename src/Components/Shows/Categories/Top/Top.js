@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import Nav from "../../../Nav/Nav";
-import TopMovies from "./Single/Top";
+import TopShows from "./Single/Top";
 
 import axios from "axios";
 
@@ -16,7 +16,7 @@ class Top extends Component {
   componentDidMount = () => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`
+        `https://api.themoviedb.org/3/tv/top_rated?api_key=${API_KEY}&language=en-US&page=1`
       )
       .then(res => this.setState({ top: res.data }))
       .catch(err => console.log(err));
@@ -24,15 +24,13 @@ class Top extends Component {
 
   render() {
     return (
-      <div className="MovieCategorie">
+      <div className="ShowCategorie">
         <Nav />
-        <div className="Categories_">
-          <h1>Top Movies</h1>
+        <div className="ShowCategories">
+          <h1>Top Shows</h1>
         </div>
-        <div className="Movies">
-          {this.state.top !== null ? (
-            <TopMovies top={this.state.top} change={this.onNotInitial} />
-          ) : null}
+        <div className="Shows">
+          {this.state.top !== null ? <TopShows top={this.state.top} /> : null}
         </div>
       </div>
     );

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import Nav from "../../../Nav/Nav";
-import PopularMovie from "./Single/Popular";
+import PopularShow from "./Single/Popular";
 
 import axios from "axios";
 
@@ -16,7 +16,7 @@ class Popular extends Component {
   componentDidMount = () => {
     axios
       .get(
-        `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US`
+        `https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}&language=en-US`
       )
       .then(res => this.setState({ popular: res.data }))
       .catch(err => console.log(err));
@@ -24,14 +24,14 @@ class Popular extends Component {
 
   render() {
     return (
-      <div className="MovieCategorie">
+      <div className="ShowCategorie">
         <Nav />
-        <div className="Categories_">
-          <h1>Popular Movies</h1>
+        <div className="ShowCategories">
+          <h1>Popular Shows</h1>
         </div>
-        <div className="Movies">
+        <div className="Shows">
           {this.state.popular !== null ? (
-            <PopularMovie
+            <PopularShow
               popular={this.state.popular}
               change={this.onNotInitial}
             />
