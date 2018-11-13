@@ -8,12 +8,12 @@ import "./Nav.scss";
 
 class Nav extends Component {
   state = {
-    search: null
+    search: ""
   };
 
-  onSearch = e => {
-    e.preventDefault();
-    this.setState({ search: e.target.value });
+  onSearch = event => {
+    event.preventDefault();
+    this.setState({ search: event.target.value });
   };
 
   render() {

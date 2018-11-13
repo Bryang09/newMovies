@@ -44,9 +44,6 @@ class Landing extends Component {
   }
 
   render() {
-    console.log(this.state.popular);
-    console.log(this.state.top);
-
     return (
       <div className="Landing">
         <Nav />

@@ -16,8 +16,6 @@ class Top extends Component {
       { id: 4, result: results[4] }
     ];
 
-    console.log(myResults);
-
     const top = myResults.map(res => {
       return (
         <div

@@ -16,8 +16,6 @@ class Theaters extends Component {
       { id: 4, result: results[4] }
     ];
 
-    console.log(myResults);
-
     const theaters = myResults.map(res => {
       return (
         <div

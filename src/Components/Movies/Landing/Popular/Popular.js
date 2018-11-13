@@ -16,8 +16,6 @@ class Popular extends Component {
       { id: 4, result: results[4] }
     ];
 
-    console.log(myResults);
-
     const popular = myResults.map(res => {
       return (
         <div

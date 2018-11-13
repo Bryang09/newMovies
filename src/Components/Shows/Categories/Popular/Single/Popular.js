@@ -33,11 +33,14 @@ class PopularShow extends Component {
             <h2>{res.name}</h2>
             <h3>
               <span>
-                <img src="https://img.icons8.com/metro/50/e74c3c/rating.png" />
+                <img
+                  src="https://img.icons8.com/metro/50/e74c3c/rating.png"
+                  alt="rating"
+                />
                 {res.vote_average}
               </span>
             </h3>
-            <h3>{res.overview}</h3>
+            <h3>{res.overview.substring(0, 250)}...</h3>
             <a
               href={`https://www.themoviedb.org/movie/${res.id}`}
               target="_blank "

@@ -15,21 +15,19 @@ import TopShows from "./Components/Shows/Categories/Top/Top";
 
 const Routes = () => {
   return (
-    <div>
-      <Switch>
-        <Route exact path="/" component={Landing} />
-        <Route exact path="/search" component={Search} />
-        <Route exact path="/movies" component={Movies} />
+    <Switch>
+      <Route exact path="/" component={Landing} />
+      <Route exact path="/search/:name" component={Search} />
+      <Route exact path="/movies" component={Movies} />
 
-        <Route exact path="/movies/popular" component={Popular} />
-        <Route exact path="/movies/top" component={Top} />
-        <Route exact path="/movies/theaters" component={Theaters} />
+      <Route exact path="/movies/popular" component={Popular} />
+      <Route exact path="/movies/top" component={Top} />
+      <Route exact path="/movies/theaters" component={Theaters} />
 
-        <Route exact path="/shows" component={Shows} />
-        <Route exact path="/shows/popular" component={PopularShows} />
-        <Route exact path="/shows/top" component={TopShows} />
-      </Switch>
-    </div>
+      <Route exact path="/shows" component={Shows} />
+      <Route exact path="/shows/popular" component={PopularShows} />
+      <Route exact path="/shows/top" component={TopShows} />
+    </Switch>
   );
 };
 

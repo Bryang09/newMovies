@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 
 import Nav from "../../Nav/Nav";
-// import Sidebar from "./Sidebar/Sidebar";
 import Hero from "./Hero/Hero";
 import Popular from "./Popular/Popular";
 import Top from "./Top/Top";
@@ -45,9 +44,6 @@ class Landing extends Component {
   }
 
   render() {
-    console.log(this.state.popular);
-    console.log(this.state.top);
-
     return (
       <div className="Landing">
         <Nav />

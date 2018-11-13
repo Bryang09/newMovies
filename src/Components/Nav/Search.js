@@ -11,12 +11,12 @@ const Search = props => {
         alignItems: "center"
       }}
     >
-      <form onChange={props.change}>
+      <form onChange={props.change} onSubmit={props.onChange}>
         <input type="text" placeholder="Type Movie or Show Name" />
       </form>
       <Link
         to={{
-          pathname: "/search",
+          pathname: `/search/${props.results}`,
           state: {
             search: props.results
           }
