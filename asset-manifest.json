@@ -1,13 +1,13 @@
 {
-  "main.css": "/newmovies/static/css/main.4499e00f.chunk.css",
-  "main.js": "/newmovies/static/js/main.3c893bed.chunk.js",
-  "main.js.map": "/newmovies/static/js/main.3c893bed.chunk.js.map",
+  "main.css": "/newmovies/static/css/main.b2243aeb.chunk.css",
+  "main.js": "/newmovies/static/js/main.64afa1ef.chunk.js",
+  "main.js.map": "/newmovies/static/js/main.64afa1ef.chunk.js.map",
   "static/js/1.d98feb71.chunk.js": "/newmovies/static/js/1.d98feb71.chunk.js",
   "static/js/1.d98feb71.chunk.js.map": "/newmovies/static/js/1.d98feb71.chunk.js.map",
   "runtime~main.js": "/newmovies/static/js/runtime~main.99752549.js",
   "runtime~main.js.map": "/newmovies/static/js/runtime~main.99752549.js.map",
-  "static/css/main.4499e00f.chunk.css.map": "/newmovies/static/css/main.4499e00f.chunk.css.map",
+  "static/css/main.b2243aeb.chunk.css.map": "/newmovies/static/css/main.b2243aeb.chunk.css.map",
   "index.html": "/newmovies/index.html",
-  "precache-manifest.f6d6c956be58bb74bddd0f39d8eb13db.js": "/newmovies/precache-manifest.f6d6c956be58bb74bddd0f39d8eb13db.js",
+  "precache-manifest.16a33e74c1e8ac1c6e109b0980c87d45.js": "/newmovies/precache-manifest.16a33e74c1e8ac1c6e109b0980c87d45.js",
   "service-worker.js": "/newmovies/service-worker.js"
 }
