@@ -53,7 +53,7 @@ class Hero extends Component {
         }
       >
         <h1>
-          Welocome to <span>Bryan's Movies</span>
+          Welocome to <span>IMBG</span>
         </h1>
         <div className="options">
           <Link to="/movies">
