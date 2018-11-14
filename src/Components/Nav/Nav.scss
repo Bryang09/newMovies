@@ -1,6 +1,7 @@
 .Nav {
   position: fixed;
   top: 0;
+  left: 0;
   background: #0c2856fc;
   width: 100%;
   color: #fff;
@@ -11,6 +12,7 @@
   .navTitle {
     // width: 40%;
     margin-left: 10vw;
+    display: flex;
 
     a {
       color: #fff;
@@ -39,28 +41,79 @@
       margin: 0;
     }
   }
+
+  .navBtn {
+    display: none;
+  }
+}
+
+input[type="text"] {
+  width: 225px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  padding: 8px 10px 8px 10px;
+  outline: none;
+
+  &:focus {
+    border: 1px solid red;
+  }
 }
 
 @media screen and (max-width: 1170px) {
   .Nav {
     .Navigation {
-      margin-left: 25vw;
+      margin-left: 20vw;
     }
   }
 }
 @media screen and (max-width: 768px) {
   .Nav {
+    flex-direction: column;
+    align-items: flex-start;
+    // background: none;
+    background: rgba(0, 0, 0, 0.001);
+    transition: 0.5s ease-out;
+    h2 {
+      // display: none;
+    }
     .Navigation {
-      margin-left: 15vw;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0;
+      justify-content: center;
+      // align-items: flex-start;
+      align-items: center;
 
       h3 {
-        font-size: 0.95em;
+        font-size: 2em;
+      }
+
+      a {
+        margin: 2vh 0;
       }
     }
+
     .navTitle {
+      width: 90vw;
+
       h2 {
-        font-size: 1.2em;
+        margin-left: 22vw;
+        display: none;
       }
     }
+  }
+
+  input[type="text"] {
+    width: 350px;
+    text-align: center;
+  }
+  .searchBar {
+    padding: 2vh 0;
+    width: 100%;
+    margin: 0 auto;
   }
 }

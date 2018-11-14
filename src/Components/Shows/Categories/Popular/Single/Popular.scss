@@ -25,6 +25,7 @@ $Link: #3bda3b;
       margin-right: 10%;
       transition: 1s ease-in;
       cursor: pointer;
+      box-shadow: 1px 8px 80px #c1c0c0;
     }
 
     .initialImg {
@@ -90,7 +91,7 @@ $Link: #3bda3b;
   }
 }
 
-.Shows .initialSearchCategory {
+.Shows .initialShowCategory {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

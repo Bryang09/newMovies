@@ -29,8 +29,7 @@ class SearchResults extends Component {
 
   componentDidMount = () => {
     const result = decodeURI(this.props.match.params.name);
-    // console.log(this.props.match.params.name);
-    // console.log(decodeURI(result));
+
     axios
       .get(
         `
@@ -44,12 +43,17 @@ class SearchResults extends Component {
     this.setState({ initial: !this.state.initial });
   };
 
+  Capitalize = str => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
   render() {
     return (
       <div className="Search">
         <Nav />
         <h1>
-          Searching for <span>{this.props.match.params.name}</span>
+          Searching for{" "}
+          <span>{this.Capitalize(this.props.match.params.name)}</span>
         </h1>
         {this.state.result !== "" ? (
           <Results

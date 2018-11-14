@@ -10,6 +10,7 @@ const Search = props => {
         justifyContent: "center",
         alignItems: "center"
       }}
+      className="searchBar"
     >
       <form onChange={props.change} onSubmit={props.onChange}>
         <input type="text" placeholder="Type Movie or Show Name" />

@@ -5,7 +5,14 @@ $Link: #3bda3b;
 
   h1 {
     padding-top: 15vh;
-    margin-bottom: 0;
+    margin: 0;
+    font-weight: 300;
+    padding-left: 5vw;
+    color: #fff;
+
+    span {
+      font-weight: 400;
+    }
   }
   .SearchCategory {
     height: 100%;

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import Search from "./Search";
+import Burger from "./Burger/Burger";
 
 import "./Nav.scss";
 
@@ -16,16 +17,31 @@ class Nav extends Component {
     this.setState({ search: event.target.value });
   };
 
+  onBurger = () => {
+    this.setState({ burger: !this.state.burger });
+  };
+
   render() {
     return (
-      <div className="Nav">
-        <div className="navTitle">
-          <Link to="/">
-            <h2>IMBG</h2>
-          </Link>
+      <div
+        className="Nav"
+        style={this.state.burger ? { background: "#0c2856fc" } : null}
+      >
+        <div
+          className="navTitle"
+          style={this.state.burger ? { display: "flex" } : null}
+        >
+          <Burger click={this.onBurger} burger={this.state.burger} />
+
+          <h2 style={this.state.burger ? { display: "block" } : null}>
+            <Link to="/">IMBG</Link>
+          </h2>
         </div>
 
-        <div className="Navigation">
+        <div
+          className="Navigation"
+          style={this.state.burger ? { display: "flex" } : null}
+        >
           <Link to="/movies">
             <h3>Movies</h3>
           </Link>
