@@ -44,7 +44,7 @@ class PopularShow extends Component {
               </h3>
               <h3>{res.overview.substring(0, 250)}...</h3>
               <a
-                href={`https://www.themoviedb.org/movie/${res.id}`}
+                href={`https://www.themoviedb.org/tv/${res.id}`}
                 target="_blank "
                 rel="noopener noreferrer"
               >
